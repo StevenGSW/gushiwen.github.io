@@ -1,2 +1,3 @@
 # gushiwen.github.io
-<img src = "oneeye.png" width='300' />
+## My Eyes Repo
+<a href="http://johntango.github.io/eyes">Eyes Exercise</a>
