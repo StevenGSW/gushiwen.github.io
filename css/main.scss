@@ -69,17 +69,18 @@ header {
 
         .clipper {
             margin-bottom: 1rem;
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
         .anim-panel {
-            overflow: hidden;
+            overflow-x: hidden;
         }
 
     }
 
     section.hero {
         padding-top: 6rem;
+        padding-bottom: 3rem;
         background-color: rgb(228,228,216);
         text-align: center;
         overflow: hidden;
@@ -93,9 +94,20 @@ header {
 
         .introduction {
             display: inline-block;
-            padding: 1rem;
-            text-align: left;
+            justify-content: center;
             max-width: 640px;
+        }
+
+        p {
+            display: inline-block;
+            text-align: left;
+            width: 90%;
+        }
+
+        #youtube {
+            display: inline-block;
+            text-align: left;
+            width: 90%;
         }
 
     }
@@ -106,7 +118,7 @@ header {
     }
 
     section.skill, section.biography {
-        padding: 2rem;
+        padding: 3rem 2rem;
         background-color: #FFCC00;
 
         .btn-div {
@@ -130,7 +142,7 @@ header {
     }
 
     section.contact {
-        padding: 2rem;
+        padding: 3rem 2rem;
 
         label {
             display: inline-block;
@@ -152,10 +164,9 @@ header {
     }
 
     section.project {
-        padding-top: 6rem;
+        padding: 6rem 2rem 3rem 2rem;
         background-color: rgb(228,228,216);
         text-align: center;
-        overflow: hidden;
     }
 }
 

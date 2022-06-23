@@ -58,13 +58,14 @@ header nav ul li a {
 }
 .wrapper section .clipper {
   margin-bottom: 1rem;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .wrapper section .anim-panel {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .wrapper section.hero {
   padding-top: 6rem;
+  padding-bottom: 3rem;
   background-color: rgb(228, 228, 216);
   text-align: center;
   overflow: hidden;
@@ -77,16 +78,25 @@ header nav ul li a {
 }
 .wrapper section.hero .introduction {
   display: inline-block;
-  padding: 1rem;
-  text-align: left;
+  justify-content: center;
   max-width: 640px;
+}
+.wrapper section.hero p {
+  display: inline-block;
+  text-align: left;
+  width: 90%;
+}
+.wrapper section.hero #youtube {
+  display: inline-block;
+  text-align: left;
+  width: 90%;
 }
 .wrapper section.skill, .wrapper section.biography, .wrapper section.contact {
   font-size: 0.9rem;
   line-height: 1.6rem;
 }
 .wrapper section.skill, .wrapper section.biography {
-  padding: 2rem;
+  padding: 3rem 2rem;
   background-color: #FFCC00;
 }
 .wrapper section.skill .btn-div, .wrapper section.biography .btn-div {
@@ -106,7 +116,7 @@ header nav ul li a {
   color: white;
 }
 .wrapper section.contact {
-  padding: 2rem;
+  padding: 3rem 2rem;
 }
 .wrapper section.contact label {
   display: inline-block;
@@ -124,10 +134,9 @@ header nav ul li a {
   display: block;
 }
 .wrapper section.project {
-  padding-top: 6rem;
+  padding: 6rem 2rem 3rem 2rem;
   background-color: rgb(228, 228, 216);
   text-align: center;
-  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
