@@ -58,10 +58,7 @@ header nav ul li a {
 }
 .wrapper section .clipper {
   margin-bottom: 1rem;
-  overflow-x: hidden;
-}
-.wrapper section .anim-panel {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .wrapper section.hero {
   padding-top: 6rem;
