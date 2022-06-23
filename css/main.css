@@ -67,16 +67,15 @@ header nav ul li a {
   padding-top: 6rem;
   background-color: rgb(228, 228, 216);
   text-align: center;
+  display: flex;
 }
 .wrapper section.hero img {
   border: 1px solid grey;
   border-radius: 1rem;
-  display: inline-block;
-  margin: 1.4rem 1rem 1rem 0;
   vertical-align: top;
 }
 .wrapper section.hero .introduction {
-  display: inline-block;
+  border: 1px solid red;
   text-align: left;
   max-width: 640px;
 }
