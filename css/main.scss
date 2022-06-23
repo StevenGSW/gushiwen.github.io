@@ -89,8 +89,10 @@ header {
         .introduction {
             text-align: left;
             max-width: 640px;
-            overflow: hidden;
+        }
 
+        p {
+            word-wrap: break-word;
         }
 
     }
