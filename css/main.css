@@ -75,11 +75,10 @@ header nav ul li a {
   margin: 1.4rem 1rem 1rem 0;
   vertical-align: top;
 }
-.wrapper section.hero p {
+.wrapper section.hero .introduction {
   display: inline-block;
   text-align: left;
   max-width: 640px;
-  font-size: 1.2rem;
 }
 .wrapper section.skill, .wrapper section.biography, .wrapper section.contact {
   font-size: 0.9rem;

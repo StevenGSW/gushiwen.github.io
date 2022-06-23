@@ -89,12 +89,13 @@ header {
             vertical-align: top;
         }
 
-        p {
+        .introduction {
             display: inline-block;
             text-align: left;
             max-width: 640px;
-            font-size: 1.2rem;
+
         }
+
     }
 
     section.skill, section.biography, section.contact {

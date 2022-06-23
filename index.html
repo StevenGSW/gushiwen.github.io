@@ -29,6 +29,7 @@
                 </div>
                 <div class="anim-panel">
                     <img src="./images/GUSHIWEN.jpg" width="150px" height="200px" />
+                    <div class="introduction">
                     <p>As a full stack developer and digital marketing specialist, I have spent the last ten over years
                         developing enterprise websites and promoting them worldwide based on google / YouTube / Facebook
                         etc.One of my strengths is quickly setting up a light-weight website and applying effective SEO
@@ -39,8 +40,9 @@
                         www.optics.sg, www.singarts.com, www.geomancy.ol.sg …<br><br>
                         I’ve been interested in using MERN full stack technologies in website development, by which as I
                         think deploying website will be faster and SEO will work more efficiently.<br><br>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5inEVnAsoUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </p>
+                    <div id="youtube"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -88,6 +90,7 @@
 
             window.addEventListener("load", function (e) {
                 document.body.style.display = "block";
+                document.getElementById('youtube').innerHTML = '<iframe width="400" height="225" src="https://www.youtube.com/embed/5inEVnAsoUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
                 let t1 = new TimelineMax();
                 t1.staggerFrom('section', 2, {
                     opacity: 0,
