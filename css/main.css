@@ -69,6 +69,7 @@ header nav ul li a {
 }
 .wrapper section.hero img {
   display: inline-block;
+  margin-bottom: 1rem;
   border: 1px solid grey;
   border-radius: 1rem;
   vertical-align: top;
@@ -81,12 +82,12 @@ header nav ul li a {
 .wrapper section.hero p {
   display: inline-block;
   text-align: left;
-  width: 90%;
+  width: 80%;
 }
 .wrapper section.hero #youtube {
   display: inline-block;
   text-align: left;
-  width: 90%;
+  width: 80%;
 }
 .wrapper section.skill, .wrapper section.biography, .wrapper section.contact {
   font-size: 0.9rem;
