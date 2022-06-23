@@ -46,9 +46,6 @@ header nav ul li a {
   display: grid;
   grid-template-columns: auto;
 }
-.wrapper section {
-  padding: 3rem;
-}
 .wrapper section h1, .wrapper section h2, .wrapper section .link-btn {
   text-transform: uppercase;
   margin: 0;
@@ -60,22 +57,26 @@ header nav ul li a {
   font-size: 1.2rem;
 }
 .wrapper section .clipper {
+  margin-bottom: 1rem;
   overflow: hidden;
-  margin-bottom: 1em;
+}
+.wrapper section .anim-panel {
+  overflow: hidden;
 }
 .wrapper section.hero {
   padding-top: 6rem;
   background-color: rgb(228, 228, 216);
   text-align: center;
-  display: flex;
 }
 .wrapper section.hero img {
+  display: inline-block;
   border: 1px solid grey;
   border-radius: 1rem;
   vertical-align: top;
 }
 .wrapper section.hero .introduction {
-  border: 1px solid red;
+  display: inline-block;
+  padding: 1rem;
   text-align: left;
   max-width: 640px;
 }
@@ -84,6 +85,7 @@ header nav ul li a {
   line-height: 1.6rem;
 }
 .wrapper section.skill, .wrapper section.biography {
+  padding: 2rem;
   background-color: #FFCC00;
 }
 .wrapper section.skill .btn-div, .wrapper section.biography .btn-div {
@@ -102,6 +104,9 @@ header nav ul li a {
   background-color: #625008;
   color: white;
 }
+.wrapper section.contact {
+  padding: 2rem;
+}
 .wrapper section.contact label {
   display: inline-block;
   width: 4rem;
@@ -118,7 +123,7 @@ header nav ul li a {
   display: block;
 }
 .wrapper section.project {
-  padding-top: 4rem;
+  padding-top: 6rem;
   background-color: rgb(228, 228, 216);
   text-align: center;
 }

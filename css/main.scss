@@ -53,7 +53,6 @@ header {
     grid-template-columns: auto;
 
     section {
-        padding: 3rem;
 
         h1, h2, .link-btn {
             text-transform: uppercase;
@@ -69,25 +68,31 @@ header {
         }
 
         .clipper {
+            margin-bottom: 1rem;
             overflow: hidden;
-            margin-bottom: 1em;
         }
+
+        .anim-panel {
+            overflow: hidden;
+        }
+
     }
 
     section.hero {
         padding-top: 6rem;
         background-color: rgb(228,228,216);
         text-align: center;
-        display: flex;
 
         img {
+            display: inline-block;
             border: 1px solid grey;
             border-radius: 1rem;
             vertical-align: top;
         }
 
         .introduction {
-            border: 1px solid red;
+            display: inline-block;
+            padding: 1rem;
             text-align: left;
             max-width: 640px;
         }
@@ -100,6 +105,7 @@ header {
     }
 
     section.skill, section.biography {
+        padding: 2rem;
         background-color: #FFCC00;
 
         .btn-div {
@@ -123,6 +129,7 @@ header {
     }
 
     section.contact {
+        padding: 2rem;
 
         label {
             display: inline-block;
@@ -144,7 +151,7 @@ header {
     }
 
     section.project {
-        padding-top: 4rem;
+        padding-top: 6rem;
         background-color: rgb(228,228,216);
         text-align: center;
     }
