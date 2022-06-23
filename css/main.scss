@@ -78,18 +78,15 @@ header {
         padding-top: 6rem;
         background-color: rgb(228,228,216);
         text-align: center;
-
- 
+        display: flex;
 
         img {
             border: 1px solid grey;
             border-radius: 1rem;
-            display: inline-block;
             vertical-align: top;
         }
 
         .introduction {
-            display: inline-block;
             text-align: left;
             max-width: 640px;
             overflow: hidden;
