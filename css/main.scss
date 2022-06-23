@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Tangerine:wght@700&display=swap');
+
+*  {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'Montserrat';
+    // display: none;
+}
+
+header {
+    position: absolute;
+    padding: 1rem;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: white;
+
+    a {
+        text-decoration: none;
+        color: black;
+        width: 100%;
+    }
+
+    a.logo {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        li a {
+            padding: 1rem;
+        }
+    }
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+
+    section {
+        padding: 3rem;
+
+        h1, h2, .link-btn {
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 1.3rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        .clipper {
+            overflow: hidden;
+            margin-bottom: 1em;
+        }
+    }
+
+    section.hero {
+        padding-top: 6rem;
+        background-color: rgb(228,228,216);
+        text-align: center;
+
+ 
+
+        img {
+            border: 1px solid grey;
+            border-radius: 1rem;
+            display: inline-block;
+            margin: 1.4rem 1rem 1rem 0;
+            vertical-align: top;
+        }
+
+        p {
+            display: inline-block;
+            text-align: left;
+            max-width: 640px;
+            font-size: 1.2rem;
+        }
+    }
+
+    section.skill, section.biography, section.contact {
+        font-size: .9rem;
+        line-height: 1.6rem;
+    }
+
+    section.skill, section.biography {
+        background-color: #FFCC00;
+
+        .btn-div {
+            padding-right: 2rem;
+            text-align: right;
+        }
+
+        .round-btn {
+            border-color: #9b7e0d;
+            background-color: #f5dc7c;
+            color: #625008;
+            padding: 1rem 2rem;
+            border-radius: 50%;
+            transition-duration: 0.4s;
+        }
+
+        .round-btn:hover {
+            background-color: #625008;
+            color: white;
+        }
+    }
+
+    section.contact {
+
+        label {
+            display: inline-block;
+            width: 4rem;
+        }
+
+        .link-btn {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            background: url('../images/caret-right-fill.svg') no-repeat;
+            background-size: 1rem;
+            background-position: 0 .3rem;
+            padding-left: 1.2rem;
+            margin-top: 1em;
+            display: block;
+        }
+
+    }
+
+    section.project {
+        padding-top: 4rem;
+        background-color: rgb(228,228,216);
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+    header {
+        background: none;
+    }
+
+    .wrapper {
+        grid-template-columns: 70% auto;
+        grid-template-rows: 70% auto;
+        grid-template-areas:
+            "hero skill"
+            "hero contact";
+        height: 100vh;
+
+        section.hero, section.project {
+            grid-area: hero;
+            display: grid;
+            grid-template-rows: auto;
+            align-items: center;
+
+            h1 {
+                font-size: 2.4rem;
+            }
+        }
+
+        section.contact {
+            display: grid;
+            grid-template-rows: auto;
+            align-items: top;
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 21px;
+    }
+}

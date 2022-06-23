@@ -1,9 +1,113 @@
-<html>
-    <head>
-        <title>Steven's Portfolio</title>
-    </head>
-    <body>
-        <h1>Steven's Portfolio</h1>
-        <img src="./Photo.jpg">
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven's Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body style="display:none;">
+
+    <header>
+        <a href="#" class="logo">Steven Gu Shiwen</a>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <section class="hero">
+            <div class="inner">
+                <div class="clipper">
+                    <h1>Full Stack Developer</h1>
+                </div>
+                <div class="anim-panel">
+                    <img src="./images/GUSHIWEN.jpg" width="150px" height="200px" />
+                    <p>As a full stack developer and digital marketing specialist, I have spent the last ten over years
+                        developing enterprise websites and promoting them worldwide based on google / YouTube / Facebook
+                        etc.One of my strengths is quickly setting up a light-weight website and applying effective SEO
+                        strategies to make it ranking highly on google.<br><br>
+                        My recent project www.pianoshop.sg is google first ranking when customers search keywords “piano
+                        shop”, “buy pianos”, “used pianos” etc. in Singapore, it became Singapore’s leading piano shop
+                        online since 2011. And other websites that I’ve developed and promoted like www.rfiaa.com,
+                        www.optics.sg, www.singarts.com, www.geomancy.ol.sg …<br><br>
+                        I’ve been interested in using MERN full stack technologies in website development, by which as I
+                        think deploying website will be faster and SEO will work more efficiently.<br><br>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5inEVnAsoUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="skill">
+            <div class="inner">
+                <div class="clipper">
+                    <h2>Skills</h2>
+                </div>
+                <div class="anim-panel">
+                    <P>HTML, CSS, JAVASCRIPT, MYSQL, PYTHON, JAVA, C++, ASP.NET, PHOTOSHOP, GIT, MIT SCRATCH, SEO,
+                        Godaddy, Aliyun<br><br>
+                        Familiar with U.S. Security, China Security, Industry valuation, Enterprise Fundamental, Stock
+                        Chart Analysis<br><br>
+                        Basic Knowledge of Laser Optics, Fiber Optics, Optical Communication
+                    </P>
+                    <div class="btn-div">
+                        <button class="round-btn" onclick="window.location.href='./projects.html'">Projects</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="inner">
+                <div class="clipper">
+                    <h2>Contacts</h2>
+                </div>
+                <div class="anim-panel">
+                    <div class="phone">
+                        <label>Phone:</label><span>+86-18020275786</span>
+                    </div>
+                    <div class="email">
+                        <label>Email:</label><span>store@singpiano.com</span>
+                    </div>
+                    <a href="https://www.linkedin.com/in/gushiwen/" class="link-btn" target="_blank">Connect to My
+                        Linkedin</a>
+                    <a href="https://github.com/gushiwen" class="link-btn" target="_blank">My Github Account:
+                        gushiwen</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+
+            window.addEventListener("load", function (e) {
+                document.body.style.display = "block";
+                let t1 = new TimelineMax();
+                t1.staggerFrom('section', 2, {
+                    opacity: 0,
+                    scale: .5,
+                    ease: Power2.easeOut
+                }, 0.2);
+                t1.staggerFrom('h1, h2', .5, {
+                    opacity: 0,
+                    y: -40,
+                    ease: Power2.easeInOut
+                }, 0.2, "-=2");
+                t1.staggerFrom('.anim-panel', 1, {
+                    opacity: 0,
+                    y: -40,
+                    ease: Power2.easeInOut
+                }, 0.2, "-=1.5");
+
+            });
+        });
+    </script>
+</body>
+
 </html>

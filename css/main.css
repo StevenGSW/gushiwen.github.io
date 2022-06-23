@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Tangerine:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: "Montserrat";
+}
+
+header {
+  position: absolute;
+  padding: 1rem;
+  z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: white;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+header a.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li a {
+  padding: 1rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto;
+}
+.wrapper section {
+  padding: 3rem;
+}
+.wrapper section h1, .wrapper section h2, .wrapper section .link-btn {
+  text-transform: uppercase;
+  margin: 0;
+}
+.wrapper section h1 {
+  font-size: 1.3rem;
+}
+.wrapper section h2 {
+  font-size: 1.2rem;
+}
+.wrapper section .clipper {
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.wrapper section.hero {
+  padding-top: 6rem;
+  background-color: rgb(228, 228, 216);
+  text-align: center;
+}
+.wrapper section.hero img {
+  border: 1px solid grey;
+  border-radius: 1rem;
+  display: inline-block;
+  margin: 1.4rem 1rem 1rem 0;
+  vertical-align: top;
+}
+.wrapper section.hero p {
+  display: inline-block;
+  text-align: left;
+  max-width: 640px;
+  font-size: 1.2rem;
+}
+.wrapper section.skill, .wrapper section.biography, .wrapper section.contact {
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+}
+.wrapper section.skill, .wrapper section.biography {
+  background-color: #FFCC00;
+}
+.wrapper section.skill .btn-div, .wrapper section.biography .btn-div {
+  padding-right: 2rem;
+  text-align: right;
+}
+.wrapper section.skill .round-btn, .wrapper section.biography .round-btn {
+  border-color: #9b7e0d;
+  background-color: #f5dc7c;
+  color: #625008;
+  padding: 1rem 2rem;
+  border-radius: 50%;
+  transition-duration: 0.4s;
+}
+.wrapper section.skill .round-btn:hover, .wrapper section.biography .round-btn:hover {
+  background-color: #625008;
+  color: white;
+}
+.wrapper section.contact label {
+  display: inline-block;
+  width: 4rem;
+}
+.wrapper section.contact .link-btn {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background: url("../images/caret-right-fill.svg") no-repeat;
+  background-size: 1rem;
+  background-position: 0 0.3rem;
+  padding-left: 1.2rem;
+  margin-top: 1em;
+  display: block;
+}
+.wrapper section.project {
+  padding-top: 4rem;
+  background-color: rgb(228, 228, 216);
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  header {
+    background: none;
+  }
+
+  .wrapper {
+    grid-template-columns: 70% auto;
+    grid-template-rows: 70% auto;
+    grid-template-areas: "hero skill" "hero contact";
+    height: 100vh;
+  }
+  .wrapper section.hero, .wrapper section.project {
+    grid-area: hero;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+  }
+  .wrapper section.hero h1, .wrapper section.project h1 {
+    font-size: 2.4rem;
+  }
+  .wrapper section.contact {
+    display: grid;
+    grid-template-rows: auto;
+    align-items: top;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 21px;
+  }
+}/*# sourceMappingURL=main.css.map */
