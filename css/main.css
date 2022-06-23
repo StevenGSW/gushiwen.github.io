@@ -67,6 +67,7 @@ header nav ul li a {
   padding-top: 6rem;
   background-color: rgb(228, 228, 216);
   text-align: center;
+  overflow: hidden;
 }
 .wrapper section.hero img {
   display: inline-block;
@@ -126,6 +127,7 @@ header nav ul li a {
   padding-top: 6rem;
   background-color: rgb(228, 228, 216);
   text-align: center;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 768px) {
